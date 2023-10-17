@@ -1,0 +1,16 @@
+version: '3.9'
+services:
+  electronics:
+    image: ubuntu:jammy
+    volumes:
+      - ./workspace:/workspace
+    deploy:
+      resources:
+        limits:
+          cpus: '4'
+          memory: 8000M
+        reservations:
+          cpus: '2'
+          memory: 4000M
+    stdin_open: true # docker run -i
+    tty: true        # docker run -t
