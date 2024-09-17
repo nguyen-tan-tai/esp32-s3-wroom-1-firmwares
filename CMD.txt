@@ -1,0 +1,95 @@
+    1  sudo apt update -y
+    2  sudo apt upgrade -y
+    3  sudo apt update -y
+    4  sudo add-apt-repository ppa:git-core/ppa # apt update; apt install git
+    5  git clone https://github.com/adafruit/circuitpython.git
+    6  cd circuitpython
+    7  sudo apt install python3-pip
+    8  pip3 install --upgrade -r requirements-dev.txt
+    9  pip3 install --upgrade -r requirements-doc.txt
+   10  python
+   11  sudo apt install ninja-build cmake
+   12  taisang
+   13  sudo apt install ninja-build cmake
+   14  sudo apt install python-is-python3
+   15  python
+   16  pip3 install --upgrade -r requirements-dev.txt
+   17  pip3 install --upgrade -r requirements-doc.txt
+   18  sudo apt install python3-venv
+   19  python3 -mvenv .py
+   20  ls -la
+   21  rm -r .py
+   22  cd ..
+   23  python3 -mvenv .py
+   24  source .py/bin/activate
+   25  cd circuitpython/
+   26  pip3 install --upgrade -r requirements-dev.txt
+   27  pip3 install --upgrade -r requirements-doc.txt
+   28  curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+   29  # You can verify the installation by running:
+   30  source $HOME/.cargo/env #Import the environment config for rust
+   31  rustc --version
+   32  history
+   33  cd ports/espressif/
+   34  git checkout 9.1.3
+   35  git status
+   36  make fetch-port-submodules
+   37  esp-idf/install.sh
+   38  exit
+   39  cd circuitpython/ports/espressif/
+   40  esp-idf/install.sh
+   41  . esp-idf/export.sh
+   42  sudo apt install libusb-1.0.so.0
+   43  sudo apt install libusb-1.0-0
+   44  . esp-idf/export.sh
+   45  ls boards | grep esp32
+   46  ls boards | grep dev
+   47  cp -r espressif_esp32s3_devkitc_1_n8 espressif_esp32s3_devkitc_1_n4
+   48  cd boards/
+   49  cp -r espressif_esp32s3_devkitc_1_n8 espressif_esp32s3_devkitc_1_n4
+   50  cd espressif_esp32s3_devkitc_1_n4
+   51  ls -la
+   52  nano board.c
+   53  nano mpconfigboard.h
+   54  nano mpconfigboard.mk
+   55  nano pins.c
+   56  nano sdkconfig
+   57  cd ../..
+   58  make -j=12 BOARD=espressif_esp32s3_devkitc_1_n4
+   59  make -j12 BOARD=espressif_esp32s3_devkitc_1_n4
+   60  cd boards/espressif_esp32s3_devkitc_1_n4
+   61  ls -la
+   62  cd ..
+   63  ls
+   64  cd ..
+   65  ls
+   66  cd build-espressif_esp32s3_devkitc_1_n4/
+   67  ls -la
+   68  cd ..
+   69  make clean BOARD=espressif_esp32s3_devkitc_1_n4
+   70  make -j12 BOARD=espressif_esp32s3_devkitc_1_n4
+   71  pip3 install minify_html
+   72  make -j12 BOARD=espressif_esp32s3_devkitc_1_n4
+   73  pip3 install jsmin
+   74  make clean BOARD=espressif_esp32s3_devkitc_1_n4
+   75  make -j12 BOARD=espressif_esp32s3_devkitc_1_n4
+   76  ls
+   77  cd build-espressif_esp32s3_devkitc_1_n4/
+   78  ls -la
+   79  cd circuitpython/ports/espressif/
+   80  cd boards/
+   81  ls -la | grep n8r8
+   82  cp -r espressif_esp32s3_devkitc_1_n8r8 espressif_esp32s3_devkitc_1_n4r8
+   83  cd espressif_esp32s3_devkitc_1_n4r8
+   84  ls -la
+   85  nano board.c
+   86  nano mpconfigboard.h
+   87  nano mpconfigboard.mk
+   88  nano pins.c
+   89  nano sdkconfig
+   90  cd ../..
+   91  make -j12 BOARD=espressif_esp32s3_devkitc_1_n4r8
+   92  ls
+   93  source esp-idf/export.sh
+   94  make -j12 BOARD=espressif_esp32s3_devkitc_1_n4r8
+   95  history
